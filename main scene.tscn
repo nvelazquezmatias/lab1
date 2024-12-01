@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://6guq2orrpia"]
+[gd_scene load_steps=4 format=3 uid="uid://6guq2orrpia"]
 
 [ext_resource type="Texture2D" uid="uid://bw68h4xyqn4r7" path="res://Smiski.png" id="2_aaq71"]
 [ext_resource type="Texture2D" uid="uid://bw5qvsnwnaviv" path="res://pink-flower-cartoon-png.webp" id="2_fdlrg"]
+[ext_resource type="PackedScene" uid="uid://ipfupn5x15im" path="res://forest.tscn" id="3_pxafe"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -14,3 +15,6 @@ texture = ExtResource("2_aaq71")
 position = Vector2(245.175, 184)
 scale = Vector2(0.475, 0.475)
 texture = ExtResource("2_fdlrg")
+
+[node name="Forest2" parent="." instance=ExtResource("3_pxafe")]
+position = Vector2(2, -2)
